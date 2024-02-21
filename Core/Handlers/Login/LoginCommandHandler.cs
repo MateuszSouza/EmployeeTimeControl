@@ -32,14 +32,25 @@ namespace Core.Handlers.Login
                 {
                     message =  "Employee not found"
                 };
+
                 return retorno;
             }
 
-             retorno = new LoginCommandResponse()
+            if (BCrypt.Net.BCrypt.Verify(request.Password, Employee.Password))
             {
-                Token = TokenService.GeradorDeToken(Employee),
-                Role = "funcionario",
-                message = "Success"
+                retorno = new LoginCommandResponse()
+                    {
+                        Token = TokenService.GeradorDeToken(Employee),
+                        Role = "funcionario",
+                        message = "Success"
+                    };
+
+                return retorno;
+            }
+
+            retorno = new LoginCommandResponse()
+            {
+                message = "email or password incorrect."
             };
 
             return retorno;

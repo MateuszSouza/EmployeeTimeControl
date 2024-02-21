@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeTimeControl", "EmployeeTimeControl.csproj", "{642BA7D3-F3B8-46BA-BC83-8144F45B86BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeTimeControl", "EmployeeTimeControl.csproj", "{642BA7D3-F3B8-46BA-BC83-8144F45B86BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "..\Domain\Domain.csproj", "{1DEC7B4B-C872-4942-AD2E-49D11C476DD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "..\Repository\Repository.csproj", "{EAFE4124-8BA3-453A-AFBE-6A553ED211E1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "..\Core\Core.csproj", "{C0652696-EFA3-4450-9962-E474C655C0B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{03E97DAF-7B9F-4F0E-ADA3-A5E5EEF2D718}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,18 @@ Global
 		{642BA7D3-F3B8-46BA-BC83-8144F45B86BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{642BA7D3-F3B8-46BA-BC83-8144F45B86BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{642BA7D3-F3B8-46BA-BC83-8144F45B86BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DEC7B4B-C872-4942-AD2E-49D11C476DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DEC7B4B-C872-4942-AD2E-49D11C476DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DEC7B4B-C872-4942-AD2E-49D11C476DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DEC7B4B-C872-4942-AD2E-49D11C476DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAFE4124-8BA3-453A-AFBE-6A553ED211E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAFE4124-8BA3-453A-AFBE-6A553ED211E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAFE4124-8BA3-453A-AFBE-6A553ED211E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAFE4124-8BA3-453A-AFBE-6A553ED211E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0652696-EFA3-4450-9962-E474C655C0B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0652696-EFA3-4450-9962-E474C655C0B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0652696-EFA3-4450-9962-E474C655C0B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0652696-EFA3-4450-9962-E474C655C0B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

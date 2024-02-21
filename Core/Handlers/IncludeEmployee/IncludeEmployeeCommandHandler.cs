@@ -1,6 +1,7 @@
 ﻿using Domain.Model;
 using MediatR;
 using Repository.IRepository;
+using BCrypt;
 
 namespace Core.Handlers.IncludeEmployee
 {
@@ -25,7 +26,7 @@ namespace Core.Handlers.IncludeEmployee
                     {
                         Email = request.Email,
                         EmployeeName = request.EmployeeName,
-                        Password = request.Password,
+                        Password = BCrypt.Net.BCrypt.HashPassword(request.Password),
                         Roles = request.Roles
                     };
                     await EmployeeRepository.InsertEmployee(newEmployee);
